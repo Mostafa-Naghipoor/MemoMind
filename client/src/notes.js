@@ -24,6 +24,12 @@ const notes = [
         "What's the difference between hardware and software? You can hit your hardware with a hammer, but you can only curse at your software."
     },
     {
+      key: 6,
+      title: "Delegation",
+      content:
+        "Q. How many programmers does it take to change a light bulb? A. None It's a hardware problem"
+    },
+    {
       key: 5,
       title: "Big ideas",
       content: "Eat more sushi"
