@@ -32,3 +32,10 @@ function CreateArea(props) {
           value={note.title}
           placeholder="Title"
         />
+        <textarea
+          name="content"
+          onChange={handleChange}
+          value={note.content}
+          placeholder="Take a note..."
+          rows="3"
+        />
