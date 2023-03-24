@@ -7,19 +7,12 @@ import notes from "./notes";
 
 
 function App() {
-  return (
-    <div>
-      <Header />
-      {notes.map(noteItem => (
-        <Note
-          key={noteItem.key}
-          title={noteItem.title}
-          content={noteItem.content}
-        />
-      ))}
-      <Footer />
-    </div>
-  );
-}
+  const [notes, setNotes] = useState([]);
+
+  function addNote(newNote) {
+    setNotes(prevNotes => {
+      return [...prevNotes, newNote];
+    });
+  }
 
 export default App;
