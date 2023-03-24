@@ -23,3 +23,12 @@ function CreateArea(props) {
     });
     event.preventDefault();
   }
+  return (
+    <div>
+      <form>
+        <input
+          name="title"
+          onChange={handleChange}
+          value={note.title}
+          placeholder="Title"
+        />
