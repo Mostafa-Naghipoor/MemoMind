@@ -5,3 +5,13 @@ function CreateArea(props) {
     title: "",
     content: ""
   });
+  function handleChange(event) {
+    const { name, value } = event.target;
+
+    setNote(prevNote => {
+      return {
+        ...prevNote,
+        [name]: value
+      };
+    });
+  }
