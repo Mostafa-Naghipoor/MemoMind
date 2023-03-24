@@ -44,3 +44,4 @@ function CreateArea(props) {
     </div>
   );
 }
+export default CreateArea;
